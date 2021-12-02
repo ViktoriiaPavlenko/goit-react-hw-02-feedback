@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+.button {
+  width: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background-color: rgb(114, 84, 161);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:not(:last-child) {
+  margin-right: 10px;
+}
+.button:hover,
+.button:focus {
+  box-shadow: 4px 4px 8px 0px rgba(199, 25, 155, 0.2);
+  transform: scale(1.04);
+}
