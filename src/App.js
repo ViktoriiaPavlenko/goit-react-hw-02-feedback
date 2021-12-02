@@ -22,9 +22,9 @@ class App extends Component {
 
   render() {
     const feedbackOptions = Object.keys(this.state);
-    const positivePercentage = this.countPositiveFeedbackPercentage();
     const total = this.countTotalFeedback();
     const isShowStatistics = total > 0;
+    const positivePercentage = this.countPositiveFeedbackPercentage();
 
     return (
       <div>
